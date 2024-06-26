@@ -7,10 +7,10 @@ function ListTasks() {
 
   return (
     <div className="flex flex-col mx-2">
-      <ul className="border-b border-solid border-black">
+      <ul>
         {tasks.map((task: TaskItem) => (
           <li
-            className="border-r border-l border-t border-solid border-black py-2 pl-2"
+            className="border border-solid border-black py-2 pl-2"
             key={task.id}
           >
             {task.description}

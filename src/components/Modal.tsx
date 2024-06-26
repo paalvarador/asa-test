@@ -27,12 +27,15 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <div className="flex flex-col items-center justify-center fixed z-1 left-0 top-0 w-full h-full overflow-auto bg-black/50">
       <div className="flex flex-col bg-white m-[15% auto] p-5 border brder-solid border-[#888] w-96 rounded-2xl">
-        <span
-          className="block text-[#aaaaaa] w-5 text-lg font-bold text-center float-right mb-2"
-          onClick={onClose}
-        >
-          &times;
-        </span>
+        <div>
+          <span
+            className="text-[#aaaaaa] cursor-pointer float-right mb-5 text-2xl"
+            onClick={onClose}
+          >
+            &times;
+          </span>
+        </div>
+
         <input
           type="text"
           value={description}
