@@ -7,7 +7,7 @@ function Tasks() {
     <>
       <AddTaskButton />
       <ListTasks />
-      <div className="text-center mt-2">
+      <div className="mt-2 text-center">
         <Link to="/">Volver al Inicio</Link>
       </div>
     </>

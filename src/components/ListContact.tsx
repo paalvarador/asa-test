@@ -9,13 +9,14 @@ interface ContactProps {
 
 const ListContact: React.FC<ContactProps> = ({ name, avatar, createdAt }) => {
   return (
-    <div className="flex flex-row border border-solid border-black items-center pl-5 py-2 my-5 mx-5">
+    <div className="flex flex-row items-center py-2 pl-5 mx-5 my-5 border border-black border-solid">
       <div>
         <img
           className="rounded-full shadow-lg"
           src={avatar || defaultAvatar}
           width={90}
           height={90}
+          alt="Contact Avatar"
         />
       </div>
       <div className="flex flex-col ml-10">

@@ -38,7 +38,7 @@ function Lists() {
   if (loading) {
     return (
       <>
-        <div className="flex w-full h-full justify-center items-center">
+        <div className="flex items-center justify-center w-full h-full">
           Loading...
         </div>
       </>
@@ -59,7 +59,7 @@ function Lists() {
           // Aquí puedes mostrar otros campos según la estructura de datos
         ))}
       </ul>
-      <div className="text-center mt-2">
+      <div className="mt-2 text-center">
         <Link to="/">Volver al Inicio</Link>
       </div>
     </div>
