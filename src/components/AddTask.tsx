@@ -16,7 +16,7 @@ function AddTaskButton() {
     <div className="flex flex-col items-center mt-5">
       <button
         onClick={handleButtonClick}
-        className="border border-solid px-32 py-3 rounded-lg bg-blue-300 mb-4"
+        className="px-32 py-5 mb-4 font-bold bg-blue-300 border border-solid rounded-lg"
       >
         New Task
       </button>

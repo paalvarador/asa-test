@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center fixed z-1 left-0 top-0 w-full h-full overflow-auto bg-black/50">
+    <div className="fixed top-0 left-0 flex flex-col items-center justify-center w-full h-full overflow-auto z-1 bg-black/50">
       <div className="flex flex-col bg-white m-[15% auto] p-5 border brder-solid border-[#888] w-96 rounded-2xl">
         <div>
           <span
@@ -41,16 +41,16 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           placeholder="New Task Name"
-          className="border borer-solid border-black rounded-md h-10 pl-2 text-black placeholder:text-black mb-4"
+          className="h-12 pl-2 mb-4 text-black border border-black rounded-md borer-solid placeholder:text-black"
         />
         <button
           onClick={handleSubmit}
-          className="border border-solid px-32 py-3 rounded-lg bg-blue-300 mb-4"
+          className="px-32 py-5 mb-4 font-bold bg-blue-300 border border-solid rounded-lg"
         >
           Add
         </button>
         {errorMessage && (
-          <span className="text-red-500 text-center">Please enter a task</span>
+          <span className="text-center text-red-500">Please enter a task</span>
         )}
       </div>
     </div>

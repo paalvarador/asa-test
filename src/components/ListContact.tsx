@@ -12,7 +12,7 @@ const ListContact: React.FC<ContactProps> = ({ name, avatar, createdAt }) => {
     <div className="flex flex-row items-center py-2 pl-5 mx-5 my-5 border border-black border-solid">
       <div>
         <img
-          className="rounded-full shadow-lg"
+          className="border-2 border-solid rounded-full"
           src={avatar || defaultAvatar}
           width={90}
           height={90}
