@@ -17,7 +17,7 @@ function Lists() {
     const fetchUserInfo = async () => {
       try {
         const response = await fetch(
-          "http://6172cfe5110a740017222e2b.mockapi.io/elements"
+          "https://6172cfe5110a740017222e2b.mockapi.io/elements"
         );
         if (!response.ok) {
           throw new Error("Failed to fech data");
